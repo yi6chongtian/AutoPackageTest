@@ -15,25 +15,25 @@ rm -rf ${archive_path}
 rm -rf ${ipa_path}
 
 # #归档
-# xcodebuild archive \
-# -workspace ${workspace_name} \
-# -scheme ${scheme_name} \
-# -configuration ${configuration_type} \
-# -archivePath ${archive_path}
+ xcodebuild archive \
+ -workspace ${workspace_name} \
+ -scheme ${scheme_name} \
+ -configuration ${configuration_type} \
+ -archivePath ${archive_path}
 
 # #ipa打包
-# xcodebuild -exportArchive \
-# -archivePath ${archive_path} \
-# -exportPath ${ipa_path} \
-# -configuration ${configuration_type} \
-# -exportOptionsPlist ${exportPlist_path}
+ xcodebuild -exportArchive \
+ -archivePath ${archive_path} \
+ -exportPath ${ipa_path} \
+ -configuration ${configuration_type} \
+ -exportOptionsPlist ${exportPlist_path}
 
 # 测试jq
 testjq(){
    current_env="beta_dev_1115"
-   net_env=`jq .${current_env}.APP_NET_ENV PodfileConfig.json`
-   user_env=`jq .${current_env}.APP_USER_ENV PodfileConfig.json`
-   branch=`jq .${current_env}.APP_BUILD_BRANCH PodfileConfig.json`
+   net_env=`jq .${current_env}.APP_NET_ENV Config.json`
+   user_env=`jq .${current_env}.APP_USER_ENV Config.json`
+   branch=`jq .${current_env}.APP_BUILD_BRANCH Config.json`
    echo "net_env:${net_env},user_env:${user_env},branch:${branch}"
 
    #修改值
