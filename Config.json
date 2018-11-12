@@ -1,0 +1,52 @@
+{
+  "current_env": "beta_dev_1115",
+  "current_branch": "",
+  
+  "beta_dev": {
+    "APP_NET_ENV": "APP_DEV",
+    "APP_USER_ENV": "APP_USER_ENV_BETA",
+    "APP_BUILD_BRANCH": "develop"
+  },
+  "beta_test": {
+    "APP_NET_ENV": "APP_TEST",
+    "APP_USER_ENV": "APP_USER_ENV_BETA",
+    "APP_BUILD_BRANCH": "test"
+  },
+  "trial_test": {
+    "APP_NET_ENV": "APP_TEST",
+    "APP_USER_ENV": "APP_USER_ENV_TRIAL",
+    "APP_BUILD_BRANCH": "test"
+  },
+  "trial_test_out": {
+    "APP_NET_ENV": "APP_TEST_OUT",
+    "APP_USER_ENV": "APP_USER_ENV_TRIAL",
+    "APP_BUILD_BRANCH": "test"
+  },
+  "trial_stage": {
+    "APP_NET_ENV": "APP_STAGE",
+    "APP_USER_ENV": "APP_USER_ENV_TRIAL",
+    "APP_BUILD_BRANCH": "stage"
+  },
+  "trial_prod": {
+    "APP_NET_ENV": "APP_PROD",
+    "APP_USER_ENV": "APP_USER_ENV_TRIAL",
+    "APP_BUILD_BRANCH": "prod"
+  },
+
+  "beta_dev_1025": {
+    "APP_NET_ENV": "APP_DEV",
+    "APP_USER_ENV": "APP_USER_ENV_BETA",
+    "APP_BUILD_BRANCH": "1025"
+  },
+
+  "trial_stage_1025": {
+    "APP_NET_ENV": "APP_STAGE",
+    "APP_USER_ENV": "APP_USER_ENV_TRIAL",
+    "APP_BUILD_BRANCH": "1025"
+  },
+  "beta_dev_1115": {
+    "APP_NET_ENV": "APP_DEV",
+    "APP_USER_ENV": "APP_USER_ENV_BETA",
+    "APP_BUILD_BRANCH": "1115"
+  }
+}
