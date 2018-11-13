@@ -45,3 +45,8 @@ testjq(){
 
 testjq
 
+#git
+git add .
+git commit -m "tang zhi biao tijiao"
+git push
+
