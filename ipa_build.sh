@@ -10,6 +10,9 @@ exportPlist_path="exportOptions.plist"
 mProjectPath=${cd `dirname $0`; pwd}
 echo "mProjectPath:${mProjectPath}"
 
+#git 切换分支
+git checkout master
+
 #删除旧文件
 rm -rf ${archive_path}
 rm -rf ${ipa_path}
