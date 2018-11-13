@@ -20,7 +20,6 @@
 /* Begin PBXFileReference section */
 		202BEC42C387978C965CDD9A /* libPods-AutoPackageTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoPackageTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F49CE1B120F10C5C235D8B9 /* Pods-AutoPackageTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPackageTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoPackageTest/Pods-AutoPackageTest.debug.xcconfig"; sourceTree = "<group>"; };
-		81199F762195242100505987 /* AutoPackageTest copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AutoPackageTest copy-Info.plist"; path = "/Users/tangzhibiao/Desktop/测试项目/AutoPackageTest/AutoPackageTest copy-Info.plist"; sourceTree = "<absolute>"; };
 		8171EFB32193D0DD002C53BC /* AutoPackageTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPackageTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8171EFB62193D0DD002C53BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8171EFB72193D0DD002C53BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,7 +62,6 @@
 				8171EFB42193D0DD002C53BC /* Products */,
 				2A9025DC5B4307475E0FACF7 /* Pods */,
 				AF0E68298F5269561D25C6FC /* Frameworks */,
-				81199F762195242100505987 /* AutoPackageTest copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -345,7 +343,10 @@
 					APP_USER_ENV_BETA,
 				);
 				INFOPLIST_FILE = AutoPackageTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yz.app.AutoPackageTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -367,7 +368,10 @@
 					APP_USER_ENV_BETA,
 				);
 				INFOPLIST_FILE = AutoPackageTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yz.app.AutoPackageTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
