@@ -1,4 +1,5 @@
 #!/bin/sh
+#### 我们使用jq来解析json文件，所以打包机需要先brew install jq
 target_name="AutoPackageTest"
 scheme_name=${target_name}
 workspace_name="${target_name}.xcworkspace"
@@ -7,7 +8,8 @@ ipa_path="archive/${target_name}.ipa"
 configuration_type="Release"
 exportPlist_path="exportOptions.plist"
 
-mProjectPath=${cd `dirname $0`; pwd}
+#获取当前目录
+mProjectPath=$(cd `dirname $0`; pwd)
 echo "mProjectPath:${mProjectPath}"
 
 #git 切换分支
